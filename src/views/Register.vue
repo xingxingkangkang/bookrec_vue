@@ -5,7 +5,7 @@
     </div>
     <div id="register_form">
       <a-form :form="form" @submit="handleSubmit">
-        <a-form-item v-bind="formItemLayout" label="Phone Number">
+        <a-form-item v-bind="formItemLayout" label="账号">
           <a-input
             v-decorator="[
               'phone',
@@ -31,7 +31,7 @@
             </a-select>
           </a-input>
         </a-form-item>
-        <a-form-item v-bind="formItemLayout" label="Password" has-feedback>
+        <a-form-item v-bind="formItemLayout" label="密码" has-feedback>
           <a-input
             v-decorator="[
               'password',
@@ -50,11 +50,7 @@
             type="password"
           />
         </a-form-item>
-        <a-form-item
-          v-bind="formItemLayout"
-          label="Confirm Password"
-          has-feedback
-        >
+        <a-form-item v-bind="formItemLayout" label="确认密码" has-feedback>
           <a-input
             v-decorator="[
               'confirm',
@@ -76,8 +72,8 @@
         </a-form-item>
         <a-form-item v-bind="formItemLayout">
           <span slot="label">
-            Nickname&nbsp;
-            <a-tooltip title="What do you want others to call you?">
+            昵称&nbsp;
+            <a-tooltip title="在系统中希望别人叫你什么">
               <a-icon type="question-circle-o" />
             </a-tooltip>
           </span>
@@ -98,15 +94,15 @@
         </a-form-item>
         <a-form-item v-bind="tailFormItemLayout">
           <a-checkbox v-decorator="['agreement', { valuePropName: 'checked' }]">
-            I have read the
+            我已经阅读了
             <a href="/user/agreement">
-              agreement
+              系统用户协议
             </a>
           </a-checkbox>
         </a-form-item>
         <a-form-item v-bind="tailFormItemLayout">
           <a-button type="primary" html-type="submit">
-            Register
+            立即注册
           </a-button>
           <a-button type="primary" style="float: right;" @click="onClick"
             >返回登录</a-button

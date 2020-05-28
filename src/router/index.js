@@ -60,10 +60,28 @@ const routes = [
         component: { render: h => h('router-view') },
         children: [
           {
+            path: '/books/userinfo',
+            name: 'userInfo',
+            component: () =>
+              import(/* webpackChunkName: "BasicLayout" */ '../views/UserInfo')
+          },
+          {
+            path: '/books/modify',
+            name: 'modfiy',
+            component: () =>
+              import(/* webpackChunkName: "user" */ '../views/Modify')
+          },
+          {
             path: '/books/like',
             name: 'like',
             component: () =>
               import(/* webpackChunkName: "BasicLayout" */ '../views/Like')
+          },
+          {
+            path: '/books/hot',
+            name: 'Hot',
+            component: () =>
+              import(/* webpackChunkName: "BasicLayout" */ '../views/Hot')
           },
           {
             path: '/books/history',

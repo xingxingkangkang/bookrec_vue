@@ -51,17 +51,17 @@
               }
             ]"
           >
-            Remember me
+            记住我
           </a-checkbox>
           <a class="login-form-forgot" href="./forgot">
-            Forgot password
+            忘记密码点我
           </a>
           <a-button type="primary" html-type="submit" class="login-form-button">
-            Log in
+            登录
           </a-button>
           Or
           <a href="./register">
-            register now!
+            现在去注册一个新账号
           </a>
         </a-form-item>
       </a-form>

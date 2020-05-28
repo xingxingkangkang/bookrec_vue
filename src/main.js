@@ -24,7 +24,7 @@ const Icon404 = Icon.createFromIconfontCN({
 });
 
 const MenuIcon = Icon.createFromIconfontCN({
-  scriptUrl: '//at.alicdn.com/t/font_1759869_jmjpe3nqi7a.js'
+  scriptUrl: '//at.alicdn.com/t/font_1759869_6g4vi8nkvkt.js'
 });
 
 Vue.component('LoginIcon', LoginIcon);

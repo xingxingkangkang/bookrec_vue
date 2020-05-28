@@ -6,8 +6,10 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     isLogin: false,
-    nickname: '',
-    username: ''
+    nickname: '请先登录',
+    username: '请先登录',
+    read: 0,
+    readall: 0
   },
   mutations: {
     setUsername(state, val) {
@@ -21,6 +23,12 @@ export default new Vuex.Store({
       state.isLogin = false;
       state.username = '';
       state.nickname = '';
+    },
+    setCount(state, count) {
+      state.read = count;
+    },
+    setCountAll(state, countall) {
+      state.readall = countall;
     }
   },
   actions: {},

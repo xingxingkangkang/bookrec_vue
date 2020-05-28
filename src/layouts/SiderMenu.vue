@@ -14,6 +14,10 @@
         <MenuIcon type="icon-lishi" />
         <span>浏览历史</span>
       </a-menu-item>
+      <a-menu-item key="hot">
+        <MenuIcon type="icon-remen" />
+        <span>24小时热门</span>
+      </a-menu-item>
       <a-sub-menu key="sub1">
         <span slot="title"
           ><MenuIcon type="icon-wenxue-copy" /><span>文学</span></span
@@ -95,6 +99,10 @@
         <MenuIcon type="icon-zu" />
         <span>全部标签</span>
       </a-menu-item>
+      <a-menu-item key="userinfo">
+        <MenuIcon type="icon-gerenzhongxin" />
+        <span>用户中心</span>
+      </a-menu-item>
     </a-menu>
   </div>
 </template>
@@ -111,7 +119,13 @@ export default {
   methods: {
     onSelect(key) {
       console.log('select');
-      if (key.key == 'like' || key.key == 'history' || key.key == 'tags')
+      if (
+        key.key == 'like' ||
+        key.key == 'history' ||
+        key.key == 'tags' ||
+        key.key == 'userinfo' ||
+        key.key == 'hot'
+      )
         this.$router.push('/books/' + key.key);
       else {
         console.log('change');
