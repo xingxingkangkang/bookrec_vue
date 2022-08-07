@@ -12,7 +12,7 @@ export default {
     };
   },
   created() {
-    // 在页面加载时读取sessionStorage
+    // 在页面加载时读取sessionStorage测试git
     if (sessionStorage.getItem('store')) {
       console.log('loading...');
       this.$store.replaceState(
